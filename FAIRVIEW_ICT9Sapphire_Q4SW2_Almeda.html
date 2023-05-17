@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seatwork 2</title>
+<style>
+body {
+  background-image: url('pinkgrid.jpg.jpg');
+}
+  {
+  	font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+   background-color: #ffe0ea;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ffc6ad;
+}
+
+.active {
+  background-color: #ffc4d6;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1 style="text-align: center">
+		<p style="background-color:#ffbfca; color:#ffdee3">
+		<b><i>🍓╭──╯↳ ❝ [TIME VALUES] ¡! ❞╰──╮🍰</i></b>
+		</p>
+	</h1>
+</div>
+
+
+<div class="container" style="background-color:#ffcfd7; text-decoration-color:#ffdbcc; color: #ffffff">
+		<p style="text-align:center">
+	<p class="container" style="background:#ffbdc8; color: #ffdbcc">
+		<h3 style="text-align:center; text-decoration-color:#ffdbcc"><i>
+			 ------ Minutes !! ------
+
+	<hr> 
+
+	<input type="number" id="operandOne">
+	<button onclick="multiply();">Minutes to seconds</button>
+
+    </hr> 
+    <hr> 
+
+    <input type="number" id="operandTwo">
+	<button onclick="divide();">Minutes to hours</button>
+
+	</hr>
+
+	<hr> 
+
+    <input type="number" id="operandThree">
+	<button onclick="divide();">Minutes to days</button>
+
+	</hr>
+
+	<script type="text/javascript"> 
+		function multiply(){
+			// parseInt(); 
+			let a = parseInt(document.getElementById("operandOne").value); 
+			let b = 60; 
+			alert(a * b);
+		}
+		function divide(){
+			let a = 60;
+			let b = parseInt(document.getElementById("operandTwo").value);  
+			alert(a / b);
+		}
+		function divide(){
+			let a = parseInt(document.getElementById("operandThree").value);  
+			let b = 1440;  
+			alert(a / b);
+		}
+		
+	</script>
+
+</ul>
+		<div class="container-fluid" style="background-color:#ffa47d; text-decoration-color:#ffad99">
+
+
+<div>
+
+
+	<div class="container" style="background-color:#ffcfd7; text-decoration-color:#ffdbcc; color: #ffffff">
+		<p style="text-align:center">
+	<p class="container" style="background:#ffbdc8; color: #ffdbcc">
+		<h3 style="text-align:center; text-decoration-color:#ffdbcc"><i>
+			 ------ Seconds !! ------
+
+	<hr> 
+
+	<input type="number" id="operandFour">
+	<button onclick="divide();">Seconds to minutes</button>
+
+    </hr> 
+    <hr> 
+
+    <input type="number" id="operandFive">
+	<button onclick="divide();">Seconds to hours</button>
+
+	</hr>
+
+	<hr> 
+
+    <input type="number" id="operandSix">
+	<button onclick="divide();">Seconds to days</button>
+
+	</hr>
+
+	<script type="text/javascript"> 
+		function divide(){
+			// parseInt(); 
+			let a = parseInt(document.getElementById("operandFour").value);
+			let b = 60;
+			alert(a / b);
+		}
+		function divide(){
+			let a = 3600;  
+			let b = parseInt(document.getElementById("operandFive").value);  
+			alert(a / b);
+		}
+		function divide(){
+			let a = 86400;
+			let b = parseInt(document.getElementById("operandSix").value); 
+			alert(a / b);
+		}
+		
+	</script>
+
+</ul>
+		<div class="container-fluid" style="background-color:#ffa47d; text-decoration-color:#ffad99">
+</div>
+
+
+
+
+
+<div>
+
+
+	<div class="container" style="background-color:#ffcfd7; text-decoration-color:#ffdbcc; color: #ffffff">
+		<p style="text-align:center">
+	<p class="container" style="background:#ffbdc8; color: #ffdbcc">
+		<h3 style="text-align:center; text-decoration-color:#ffdbcc"><i>
+			 ------ Days !! ------
+
+	<hr> 
+
+	<input type="number" id="operandSeven">
+	<button onclick="multiply();">Days to seconds</button>
+
+    </hr> 
+    <hr> 
+
+    <input type="number" id="operandEight">
+	<button onclick="multiply();">Days to minutes</button>
+
+	</hr>
+
+	<hr> 
+
+    <input type="number" id="operandNine">
+	<button onclick="multiply();">Days to hours</button>
+
+	</hr>
+
+	<script type="text/javascript"> 
+		function multiply(){
+			// parseInt(); 
+			let a = parseInt(document.getElementById("operandSeven").value);
+			let b = 86400;
+			alert(a * b);
+		}
+		function multiply(){
+			let a = parseInt(document.getElementById("operandEight").value);    
+			let b = 1440;  
+			alert(a * b);
+		}
+		function multiply(){
+			let a = 24;
+			let b = parseInt(document.getElementById("operandNine").value); 
+			alert(a * b);
+		}
+		
+	</script>
+
+</ul>
+		<div class="container-fluid" style="background-color:#ffa47d; text-decoration-color:#ffad99">
+</div>
